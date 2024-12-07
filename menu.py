@@ -53,7 +53,7 @@ menu = {
 # 1. Set up order list. Order list will store a list of dictionaries for
 # menu item name, item price, and quantity ordered
 
-[
+order_list = [
   {
     "Item name": "string",
     "Price": float,
@@ -130,26 +130,37 @@ while place_order:
                     }
                     i += 1
             # 2. Ask customer to input menu item number
-
+    menu_item = input("Type item number: ")
 
             # 3. Check if the customer typed a number
-
+    if menu_item.isdigit():
+                # Convert the menu item to an integer
+                menu_item = int(menu_item)
                 # Convert the menu selection to an integer
-
-
+                
                 # 4. Check if the menu selection is in the menu items
-
+                if int(menu_item) in menu_items.keys():
+                    # Store the menu item name as a variable
+                    menu_item_name = menu_items[int(menu_item)]
                     # Store the item name as a variable
 
 
                     # Ask the customer for the quantity of the menu item
-
+                    Item_quantity = input("How many would you like? ")
 
                     # Check if the quantity is a number, default to 1 if not
+                    if Item_quantity.isdigit():
+                        Item_quantity = int(Item_quantity)
 
+                    else:
+                        Item_quantity = 1
 
                     # Add the item name, price, and quantity to the order list
-
+                    order_list.append({
+                        "Item name": menu_item_name["Item name"],
+                        "Price": menu_item_name["Price"],
+                        "Quantity": Item_quantity
+                    })         
 
                     # Tell the customer that their input isn't valid
 
