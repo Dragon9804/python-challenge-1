@@ -53,18 +53,7 @@ menu = {
 # 1. Set up order list. Order list will store a list of dictionaries for
 # menu item name, item price, and quantity ordered
 
-order_list = [
-  {
-    "Item name": "string",
-    "Price": float,
-    "Quantity": int
-  },
-  {
-    "Item name": "string",
-    "Price": float,
-    "Quantity": int
-  },
-]
+order_list = []
 
 # Launch the store and present a greeting to the customer
 print("Welcome to the variety food truck.")
@@ -130,10 +119,10 @@ while place_order:
                     }
                     i += 1
             # 2. Ask customer to input menu item number
-    menu_item = input("Type item number: ")
+            menu_item = input("Type item number: ")
 
             # 3. Check if the customer typed a number
-    if menu_item.isdigit():
+            if menu_item.isdigit():
                 # Convert the menu item to an integer
                 menu_item = int(menu_item)
                 # Convert the menu selection to an integer
@@ -163,10 +152,12 @@ while place_order:
                     })         
 
                     # Tell the customer that their input isn't valid
-
+                else:
+                    print(f"{menu_item} was not a menu option.")
 
                 # Tell the customer they didn't select a menu option
-
+            else:
+                print("Please select a number.")
         else:
             # Tell the customer they didn't select a menu option
             print(f"{menu_category} was not a menu option.")
@@ -179,7 +170,17 @@ while place_order:
         keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o ")
 
         # 5. Check the customer's input
-
+        match keep_ordering.lower():
+            case "y" | "yes":
+                # Keep ordering
+                break
+            case "n" | "no":
+                # Complete the order
+                place_order = False
+                break
+            case _:
+                # Tell the customer to try again
+                print("Please type yes or no.")
                 # Keep ordering
 
                 # Exit the keep ordering question loop
