@@ -143,7 +143,6 @@ while place_order:
 
                     else:
                         Item_quantity = 1
-
                     # Add the item name, price, and quantity to the order list
                     order_list.append({
                         "Item name": menu_item_name["Item name"],
@@ -244,12 +243,9 @@ for menu_item in order_list:
 # and print the prices.
     r = 0
     for menu_item in order_list:
-        order_list[r] = {
-            "Item name": menu_item["Item name"],
-            "Price": menu_item["Price"],
-            "Quantity": menu_item["Quantity"],
+        order_list[r]:{
+            "Total": menu_item["Price"] * menu_item["Quantity"]
         }
-        order_list[r]["Total"] = menu_item["Price"] * menu_item["Quantity"]
     r += 1
 
     total_cost = sum([menu_item_name["Total"] for menu_item_name in order_list])
