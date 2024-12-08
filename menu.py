@@ -200,7 +200,7 @@ while place_order:
 print("This is what we are preparing for you.\n")
 
 # Uncomment the following line to check the structure of the order
-#print(order)
+#print(order_list)
 
 print("Item name                 | Price  | Quantity")
 print("--------------------------|--------|----------")
