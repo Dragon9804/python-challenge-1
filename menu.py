@@ -223,13 +223,6 @@ for menu_item in order_list:
     quantity_spaces = " " * num_quantity_spaces
 
     print(f"{item_name}{item_spaces} | ${item_price}{price_spaces} | {item_quantity}{quantity_spaces}")
-    
-    # 9. Create space strings
-
-
-    # 10. Print the item name, price, and quantity
-    #print(menu_item_name["Price"])
-    #print(menu_item["Quantity"])
 
 # 11. Calculate the cost of the order using list comprehension
 # Multiply the price by quantity for each item in the order list, then sum()
