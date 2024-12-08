@@ -218,7 +218,7 @@ for menu_item in order_list:
 
 
     # 8. Calculate the number of spaces for formatted printing
-    num_item_spaces = 24 - len(item_name)
+    num_item_spaces = 25 - len(item_name)
     item_spaces = " " * num_item_spaces
     num_price_spaces = 6 - len(str(item_price))
     price_spaces = " " * num_price_spaces
