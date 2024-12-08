@@ -244,6 +244,9 @@ for menu_item in order_list:
     r = 0
     total = menu_item["Price"] * menu_item["Quantity"]
     for menu_item in order_list:
+        order_list[r] = {
+            "Total": total
+        }
         order_list.append({
             "Total": total
         })
