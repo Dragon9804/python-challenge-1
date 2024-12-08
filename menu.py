@@ -200,9 +200,9 @@ while place_order:
 print("This is what we are preparing for you.\n")
 
 # Uncomment the following line to check the structure of the order
-#print(order_list)
+print(order_list)
 
-i = 1
+t = 1
 order_list = []
 print("Item name                 | Price  | Quantity")
 print("--------------------------|--------|----------")
@@ -222,12 +222,12 @@ for item in order_list:
     num_item_spaces = 24 - len(item_name)
     item_spaces = " " * num_item_spaces
     print(f"{item_name}{item_spaces} | ${item_price} | {item_quantity}")
-    order_list[i] = {
+    order_list[t] = {
         "Item name": menu_item_name["Item name"],
         "Price": menu_item_name["Price"],
         "Quantity": Item_quantity
     }
-    i += 1
+    t += 1
 
     # 9. Create space strings
 
