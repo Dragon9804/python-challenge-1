@@ -241,11 +241,12 @@ for menu_item in order_list:
 # 11. Calculate the cost of the order using list comprehension
 # Multiply the price by quantity for each item in the order list, then sum()
 # and print the prices.
-    r = 0
+
     total = menu_item_name["Price"] * menu_item_name["Quantity"]
     order_list.append({
             "Total": total
         })
+    r = 0
     for menu_item in order_list:
         order_list[r] = {
             "Total": total
