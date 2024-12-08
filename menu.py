@@ -225,7 +225,8 @@ for item in order_list:
         "Price": menu_item_name["Price"],
         "Quantity": Item_quantity
     }
-
+    i += 1
+    
     # 9. Create space strings
 
 
