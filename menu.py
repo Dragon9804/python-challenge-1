@@ -149,7 +149,6 @@ while place_order:
                         "Item name": menu_item_name["Item name"],
                         "Price": menu_item_name["Price"],
                         "Quantity": Item_quantity
-                        "Total": menu_item_name["Price"] * Item_quantity
                     })         
 
                     # Tell the customer that their input isn't valid
