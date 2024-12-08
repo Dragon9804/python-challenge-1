@@ -244,4 +244,4 @@ for menu_item in order_list:
 # and print the prices.
     total_cost = sum([menu_item_name["Price"] * menu_item_name["Quantity"] for menu_item_name in order_list])
 
-print(f"\nTotal cost: ${total_cost:.2f}")
+print(f"Total cost: ${total_cost:.2f}")
