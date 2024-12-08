@@ -250,9 +250,10 @@ for menu_item in order_list:
         order_list[r] = {
         "Total": total
         }
+    total_cost = sum([menu_item_name["Total"] for menu_item_name in order_list])
     r += 1
 
-    total_cost = sum([menu_item_name["Total"] for menu_item_name in order_list])
+    #total_cost = sum([menu_item_name["Total"] for menu_item_name in order_list])
     
 
 print(f"Total cost: ${total_cost:.2f}")
