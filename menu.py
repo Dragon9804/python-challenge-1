@@ -198,7 +198,8 @@ while place_order:
 
 # Print out the customer's order
 print("This is what we are preparing for you.\n")
-
+i = 1
+order_list = []
 # Uncomment the following line to check the structure of the order
 #print(order_list)
 
@@ -226,7 +227,7 @@ for item in order_list:
         "Quantity": Item_quantity
     }
     i += 1
-    
+
     # 9. Create space strings
 
 
