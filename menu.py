@@ -242,18 +242,18 @@ for menu_item in order_list:
 # Multiply the price by quantity for each item in the order list, then sum()
 # and print the prices.
 
-total = menu_item_name["Price"] * menu_item_name["Quantity"]
-order_list.append({
-    "Total": total
-        })
-r = 0
-for menu_item in order_list:
-    order_list[r] = {
+    total = menu_item_name["Price"] * menu_item_name["Quantity"]
+    order_list.append({
         "Total": total
-    }
-r += 1
+        })
+    r = 0
+    for menu_item in order_list:
+        order_list[r] = {
+        "Total": total
+        }
+    r += 1
 
-total_cost = sum([menu_item_name["Total"] for menu_item_name in order_list])
+    total_cost = sum([menu_item_name["Total"] for menu_item_name in order_list])
     
 
 print(f"Total cost: ${total_cost:.2f}")
