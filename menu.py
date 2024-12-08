@@ -243,13 +243,13 @@ for menu_item in order_list:
 # and print the prices.
     r = 0
     total = menu_item["Price"] * menu_item["Quantity"]
+    order_list.append({
+            "Total": total
+        })
     for menu_item in order_list:
         order_list[r] = {
             "Total": total
         }
-        order_list.append({
-            "Total": total
-        })
         r += 1
 
     total_cost = sum([menu_item_name["Total"] for menu_item_name in order_list])
