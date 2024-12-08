@@ -246,6 +246,5 @@ for menu_item in order_list:
 
     total_cost = sum([menu_item_name["Total"] for menu_item_name in order_list])
     
-    #total_cost = sum([menu_item_name["Price"] * menu_item_name["Quantity"] for menu_item_name in order_list])
 
 print(f"Total cost: ${total_cost:.2f}")
