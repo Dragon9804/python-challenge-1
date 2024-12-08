@@ -208,13 +208,13 @@ print("Item name                 | Price  | Quantity")
 print("--------------------------|--------|----------")
 
 # 6. Loop through the items in the customer's order
-for item in order_list:
+for menu_item in order_list:
     # Create a variable for the item name
-    item_name = item["Item name"]
+    item_name = menu_item["Item name"]
     # Create a variable for the item price
-    item_price = item["Price"]
+    item_price = menu_item["Price"]
     # Create a variable for the item quantity
-    item_quantity = item["Quantity"]
+    item_quantity = menu_item["Quantity"]
     # 7. Store the dictionary items as variables
 
 
