@@ -174,6 +174,7 @@ while place_order:
             case "n" | "no":
                 # Complete the order
                 place_order = False
+                print("Thank you for your order.")
                 break
             case _:
                 # Tell the customer to try again
