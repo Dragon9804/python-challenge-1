@@ -220,7 +220,12 @@ for menu_item in order_list:
     # 8. Calculate the number of spaces for formatted printing
     num_item_spaces = 24 - len(item_name)
     item_spaces = " " * num_item_spaces
-    print(f"{item_name}{item_spaces} | ${item_price} | {item_quantity}")
+    num_price_spaces = 6 - len(str(item_price))
+    price_spaces = " " * num_price_spaces
+    num_quantity_spaces = 8 - len(str(item_quantity))
+    quantity_spaces = " " * num_quantity_spaces
+
+    print(f"{item_name}{item_spaces} | ${item_price}{price_spaces} | {item_quantity}{quantity_spaces}")
     order_list[t] = {
         "Item name": menu_item_name["Item name"],
         "Price": menu_item_name["Price"],
