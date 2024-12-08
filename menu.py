@@ -245,7 +245,7 @@ for menu_item in order_list:
     for menu_item_name in order_list:
         menu_item["Total"] = menu_item_name["Price"] * menu_item_name["Quantity"]
 
-    total_cost = sum([menu_item_name["Total"] for menu_item_name in order_list])
+        total_cost = sum([menu_item_name["Total"] for menu_item_name in order_list])
     
     
     #total_cost = sum([menu_item_name["Price"] * menu_item_name["Quantity"] for menu_item_name in order_list])
