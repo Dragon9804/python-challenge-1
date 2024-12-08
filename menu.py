@@ -154,13 +154,13 @@ while place_order:
 
                 # Tell the customer they didn't select a menu option
             else:
-                print("Please select a number.")
+                print("Please select a menu option.")
         else:
             # Tell the customer they didn't select a menu option
             print(f"{menu_category} was not a menu option.")
     else:
         # Tell the customer they didn't select a number
-        print("You didn't select a number.")
+        print("Please select a number.")
 
     while True:
         # Ask the customer if they would like to order anything else
