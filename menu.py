@@ -202,7 +202,7 @@ print("This is what we are preparing for you.\n")
 # Uncomment the following line to check the structure of the order
 print(order_list)
 
-t = 1
+t = 0
 order_list = []
 print("Item name                 | Price  | Quantity")
 print("--------------------------|--------|----------")
