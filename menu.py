@@ -203,7 +203,6 @@ print("This is what we are preparing for you.\n")
 print(order_list)
 
 t = 0
-order_list = []
 print("Item name                 | Price  | Quantity")
 print("--------------------------|--------|----------")
 
